@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* * Global Styles */
+html {
+    box-sizing: border-box;
+}
+body {
+    background-color: #60a8fe;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* * Pricing Panel */
+.panel {
+    background-color: #fffefe;
+    border-radius: 20px;
+    display:flex;
+    justify-content: space-around;
+    height: 650px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+}
+/* * Pricing Plans */
+.pricing-plan {
+    text-align: center;
+    margin: 1rem;
+    border-right:1px solid #88888b27;
+    padding-right: 2rem;
+}
+.pricing-plan:last-child {
+    border:none;
+}
+.pricing-img {
+    max-width: 100%;
+}
+.pricing-header {
+    font-size: 1.4rem;
+    color: #88888b;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+}
+.pricing-features {
+    margin-top: 2rem;
+    color: #006ef9;
+    text-transform: uppercase;
+    border-top: 1px rgba(0, 110, 249, 0.2) solid;
+    border-bottom: 1px rgba(0, 110, 249, 0.2) solid;
+}
+.pricing-features-item {
+    font-size: 1.1rem;
+    padding: 1.3rem 0;
+    line-height: 1.4rem;
+    font-weight: 600;;
+}
+.pricing-features-item:nth-of-type(2) {
+    border-top: 1px rgba(0, 110, 249, 0.2) solid;
+}
+.pricing-price {
+    display:inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #006ef9;
+    margin-top: 1.5rem;
+}
+.pricing-button {
+    display: block;
+    width: 160px;
+    height: 35px;
+    margin: 0 auto;
+    background-color:#fffefe;
+    color:#006ef9;
+    border: 1px #49abff solid;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-top: 0.7rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}   
+.is-featured {
+    background-color: #49abff;
+    color:#f5f4fe;
+    font-weight: 400;
+}
+
+@media (max-width: 768px){
+    /* * Pricing Panel */
+    .panel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    /* * Pricing Plans */
+    .pricing-plan {
+        text-align: center;
+        border-bottom:1px solid #88888b27;
+        border-right: none;
+        padding-bottom: 2rem;
+        padding-right:0;
+    }
+    .pricing-plan:last-child {
+        border:none;
+    }
+}
